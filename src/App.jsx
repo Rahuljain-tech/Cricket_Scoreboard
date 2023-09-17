@@ -11,6 +11,7 @@ import Display from './component/display'
 import Login from './component/login';
 import Player from './component/player'
 import Widepop from './component/widepop'
+import Result from './component/result';
 
 export const App = () => {
    const [score,setScore] = useState(0);
@@ -100,6 +101,7 @@ const [team2Name, setTeam2Name] = useState("");
                                                               team1Name={team1Name} team2Name={team2Name}
                                                                 setTeam1Name={setTeam1Name}  setTeam2Name={setTeam2Name}
                                                               />} />
+        <Route path='/result' element= {<Result/>}/>                                                      
         
        </Routes>  
        <Footer/>
